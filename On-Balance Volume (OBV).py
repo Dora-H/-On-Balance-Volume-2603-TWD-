@@ -6,7 +6,7 @@ import matplotlib.dates as md
 import datetime as dt
 from matplotlib.font_manager import FontProperties
 
-
+# 將文字轉換成中文
 mp.rcParams['font.sans-serif'] = ['Microsoft JhengHei']
 mp.rcParams['axes.unicode_minus'] = False
 
@@ -17,6 +17,7 @@ mp.ylabel("Volumes(K) 成交量(萬）", fontsize=14)
 mp.ylim(-80, 100)
 
 
+# 日期轉換函數
 def y2ce(ymd):
     ymd = str(ymd, encoding="utf-8")
     y, m, d = ymd.split("/")
@@ -24,7 +25,7 @@ def y2ce(ymd):
     ymd = dt.datetime.strptime(ymd, "%Y-%m-%d").date()
     return ymd
 
-
+# 從資料中輸入日期、收盤價格、成交量
 dates, close_prices, volumes = np.loadtxt("./2603.TWD.csv", delimiter=',',
                                           usecols=(1, 6, 7), unpack=True,
                                           dtype="M8[D],f4,f4",
