@@ -9,7 +9,7 @@ OBV is a cumulative total of volume (positive and negative).
 ● datetime
 
 
-## Functions
+## Function
 ● y2ce    
 
 ## 基本設定 
