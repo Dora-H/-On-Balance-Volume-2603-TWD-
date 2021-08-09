@@ -89,7 +89,7 @@ OBV is a cumulative total of volume (positive and negative).
     mp.bar(dates, volumes, 0.8, color='coral', label="Volumes成交量", zorder=3)
     
 ## 呈現
-#### 在圖示日期第12個位置上標示: 日期/名字 practise.浮水印，字體大小為20，透明度0.15
+#### 在圖示日期第10個位置上標示: 日期/名字 practise.浮水印，字體大小為20，透明度0.15
     mp.text(dates[10], 50, s='20210121\nDora practise.', fontsize=20, alpha=0.15)
     mp.legend()
     mp.show()
